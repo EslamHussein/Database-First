@@ -13,9 +13,10 @@ import io.reactivex.Observable;
  * Created by Eslam Hussein on 3/3/18.
  */
 
-public class UsersRemoteRepoImpl extends BaseRemote implements UsersRepo {
+public class UsersRemoteRepoImpl extends BaseRemote implements UsersRemoteRepo {
     @Override
     public Observable<List<User>> getAllUsers() {
         return create(UsersServices.class, RemoteConfiguration.BASE_URL).getUsers();
     }
+
 }
