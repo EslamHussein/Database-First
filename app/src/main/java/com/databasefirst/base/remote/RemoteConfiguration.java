@@ -1,4 +1,4 @@
-package com.databasefirst.base;
+package com.databasefirst.base.remote;
 
 /**
  * Created by EslamHussein on 3/3/18.

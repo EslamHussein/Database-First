@@ -23,7 +23,7 @@ ext {
     retrofitVersion = '2.3.0'
     rxAndroidVersion = '2.0.1'
     rxJavaVersion = '2.1.7'
-    retrofit2RxJava2AdapterVersion = '1.0.0'
+    retrofit2RxJava2AdapterVersion = '2.3.0'
     roomVersion = '1.0.0'
 }
 dependencies {
@@ -35,7 +35,7 @@ dependencies {
     // Retrofit
     implementation "com.squareup.retrofit2:retrofit:${retrofitVersion}"
     implementation "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
-    implementation "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:${retrofit2RxJava2AdapterVersion}"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:${retrofit2RxJava2AdapterVersion}"
 
     // RxJava
     implementation "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}"
