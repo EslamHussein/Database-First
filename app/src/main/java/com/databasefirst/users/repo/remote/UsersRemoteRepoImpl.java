@@ -1,7 +1,8 @@
 package com.databasefirst.users.repo.remote;
 
-import com.databasefirst.base.BaseRemote;
-import com.databasefirst.base.RemoteConfiguration;
+import com.databasefirst.base.remote.BaseRemote;
+import com.databasefirst.base.remote.RemoteConfiguration;
+import com.databasefirst.users.repo.UsersRepo;
 import com.databasefirst.users.repo.dto.User;
 
 import java.util.List;
@@ -12,7 +13,7 @@ import io.reactivex.Observable;
  * Created by Eslam Hussein on 3/3/18.
  */
 
-public class UsersRemoteRepoImpl extends BaseRemote implements UsersRemoteRepo {
+public class UsersRemoteRepoImpl extends BaseRemote implements UsersRepo {
     @Override
     public Observable<List<User>> getAllUsers() {
         return create(UsersServices.class, RemoteConfiguration.BASE_URL).getUsers();
