@@ -58,3 +58,6 @@ ies
 /captures
 .idea
 /gradle
+gradlew
+gradlew.bat
+gradle.properties
