@@ -18,11 +18,35 @@ android {
     }
 }
 
+ext {
+    supportLibVersion = '26.1.0'
+    retrofitVersion = '2.3.0'
+    rxAndroidVersion = '2.0.1'
+    rxJavaVersion = '2.1.7'
+    retrofit2RxJava2AdapterVersion = '1.0.0'
+    roomVersion = '1.0.0'
+}
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    // Support libraries
+    implementation "com.android.support:appcompat-v7:${supportLibVersion}"
+
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:${retrofitVersion}"
+    implementation "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
+    implementation "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:${retrofit2RxJava2AdapterVersion}"
+
+    // RxJava
+    implementation "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}"
+    implementation "io.reactivex.rxjava2:rxjava:${rxJavaVersion}"
+
+    // Room DB
+    implementation "android.arch.persistence.room:runtime:${roomVersion}"
+    annotationProcessor "android.arch.persistence.room:compiler:${roomVersion}"
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
 }
