@@ -9,4 +9,4 @@
 
  By Model - View - Presenter [MVP]
   
-##### Follow the full article here 
+##### Follow the full article [here](https://medium.com/@eslam.hussein/dominate-remote-local-data-with-rx-retrofit-room-mvp-f2b13a0ac27b) 
