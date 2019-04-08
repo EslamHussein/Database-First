@@ -41,6 +41,9 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}"
     implementation "io.reactivex.rxjava2:rxjava:${rxJavaVersion}"
 
+    //RecyclerView
+    implementation "com.android.support:recyclerview-v7:${supportLibVersion}"
+
     // Room DB
     implementation "android.arch.persistence.room:runtime:${roomVersion}"
     annotationProcessor "android.arch.persistence.room:compiler:${roomVersion}"
